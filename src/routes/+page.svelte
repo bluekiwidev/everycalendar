@@ -16,3 +16,10 @@
 	data-size="normal"
 	data-callback="onSuccess"
 ></div>
+
+<footer>
+	<p>
+		Made with ❤️ by <a href="https://bleukiwi.lol">Bluekiwi Dev</a>. View the source code on
+		<a href="https://github.com/bluekiwidev/everycalendar">GitHub</a>.
+	</p>
+</footer>
