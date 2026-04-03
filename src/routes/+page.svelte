@@ -1,8 +1,7 @@
 <div class="container">
-	<h1>Welcome to the every calendar</h1>
+	<h1>The every calendar</h1>
 	<p>
-		This is a calendar that shows every day of the year. You can click on any day to see more
-		details about it.
+		This is a calendar where anyone can dedicate a day to somthing. It can be anything, from a holiday to a birthday, or even just a random day that you want to remember. The only rule is that it has to be something that you care about. So go ahead and dedicate a day to something that matters to you!
 	</p>
 	<div
 		class="cf-turnstile"

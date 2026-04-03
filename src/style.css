@@ -1,0 +1,21 @@
+h1 {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: yellow;
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    background-color: rgb(56, 56, 56);
+}
+
+body {
+    background-color: rgb(71, 70, 70);
+}
+
+p {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
