@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv@0.13.2 create --template minimal --no-types --add prettier tailwindcss="plugins:typography" --install npm everycalendar
+npx sv@0.13.2 create --template minimal --types ts --add prettier vitest="usages:unit,component" --install npm ./
 ```
 
 ## Developing
