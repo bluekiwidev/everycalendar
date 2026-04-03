@@ -1,26 +1,107 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="text-scale" content="scale" />
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="text-scale" content="scale" />
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+			rel="stylesheet"
+		/>
 
-	<!-- Google Font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+		<!-- My Styles -->
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
 
-	<!-- My Styles -->
-	<link rel="stylesheet" href="./style.css" />
+			h1 {
+				font-family: 'Rubik Mono One', monospace;
+				font-weight: 400;
+				font-style: normal;
+				color: #e7b46a;
+				font-size: 3rem;
+				text-align: center;
+			}
 
-	<!-- Cloudflare Turnstile -->
-	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-	%sveltekit.head%
-</head>
+			.topnav {
+				background-color: #a3aa5a;
+				overflow: hidden;
+				animation: fadeIn 1s ease-in forwards;
+				border-radius: 15px;
+			}
 
-<body data-sveltekit-preload-data="hover">
-	<div style="display: contents">%sveltekit.body%</div>
-</body>
+			.topnav a {
+				float: left;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+			}
 
+			/* Change the color of links on hover */
+			.topnav a:hover {
+				background-color: #ddd;
+				color: black;
+			}
+
+			/* Add a color to the active/current link */
+			.topnav a.active {
+				background-color: #04aa6d;
+				color: white;
+			}
+
+			body {
+				background-color: #dfdfe3;
+			}
+
+			p {
+				font-family: 'Roboto', system-ui;
+				font-weight: 400;
+				font-style: bold;
+				color: #f1a17e;
+			}
+
+			footer {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				background-color: #a3aa5a;
+				color: #e7b46a;
+				text-align: center;
+			}
+
+			a {
+				color: #e7b46a;
+				text-decoration: none;
+			}
+
+			.cf-turnstile {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+		</style>
+
+		<!-- Cloudflare Turnstile -->
+		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+		%sveltekit.head%
+	</head>
+
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
 </html>
