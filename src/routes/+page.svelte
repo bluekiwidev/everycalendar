@@ -31,8 +31,10 @@
 		<div class="month">
 			<h2>{month}</h2>
 			<div class="month-stats">
-				
+				<i class="fa-solid fa-circle-dot"></i>
+				<h7>0 days dedicated</h7>
 			</div>
+			
 		</div>
 	{/each}
 </div>
