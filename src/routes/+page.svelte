@@ -1,3 +1,20 @@
+<script lang="ts">
+	const months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December'
+	];
+</script>
+
 <div class="topnav">
 	<h1>The every calendar</h1>
 </div>
@@ -8,6 +25,14 @@
 	to be something that you care about. So go ahead and dedicate a day to something that matters to
 	you!
 </p>
+
+<div class="months">
+	{#each months as month, index}
+		<div class="month">
+			<h2>{month}</h2>
+		</div>
+	{/each}
+</div>
 
 <div
 	class="cf-turnstile"
