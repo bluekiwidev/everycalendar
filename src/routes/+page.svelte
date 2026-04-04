@@ -30,6 +30,9 @@
 	{#each months as month, index}
 		<div class="month">
 			<h2>{month}</h2>
+			<div class="month-stats">
+				
+			</div>
 		</div>
 	{/each}
 </div>
