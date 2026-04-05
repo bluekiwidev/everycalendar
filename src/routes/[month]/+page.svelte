@@ -1,6 +1,6 @@
 <script>
   import { page } from '$app/state';
-  const months = [
+  const days = [
 		'1',
     '2',
     '3',
@@ -31,9 +31,9 @@
 <h2>{page.params.month}</h2>
 
 <div class="months">
-	{#each months as month, index}
-		<a href={"/" + month.toLocaleLowerCase()} class="month">
-			<h2 class="month-text">{month}</h2>
+	{#each days as day, index}
+		<a href={"/" + page.params.month + "/" + day.toLocaleLowerCase()} class="month">
+			<h2 class="month-text">{day}</h2>
 			<div class="month-stats">
 				<i class="fa-solid fa-circle-dot"></i>
 				<h6>0 events dedicated</h6>
