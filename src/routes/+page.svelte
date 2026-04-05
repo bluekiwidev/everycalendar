@@ -16,7 +16,7 @@
 </script>
 
 <div class="topnav">
-	<h1>The every calendar</h1>
+	<h1>The everyone calendar</h1>
 </div>
 
 <p>
@@ -28,7 +28,7 @@
 
 <div class="months">
 	{#each months as month, index}
-		<a href="/Jan" class="month">
+		<a href={"/" + month.toLocaleLowerCase()} class="month">
 			<h2 class="month-text">{month}</h2>
 			<div class="month-stats">
 				<i class="fa-solid fa-circle-dot"></i>
