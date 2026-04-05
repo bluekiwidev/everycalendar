@@ -28,14 +28,14 @@
 
 <div class="months">
 	{#each months as month, index}
-		<div class="month">
-			<h2>{month}</h2>
+		<a href="/Jan" class="month">
+			<h2 class="month-text">{month}</h2>
 			<div class="month-stats">
 				<i class="fa-solid fa-circle-dot"></i>
-				<h7>0 days dedicated</h7>
+				<h6>0 days dedicated</h6>
 			</div>
 			
-		</div>
+		</a>
 	{/each}
 </div>
 
